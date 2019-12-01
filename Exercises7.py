@@ -52,11 +52,12 @@ print(d4)
 #                                   Exercise 6
 # =============================================================================
 
-dataCircle={
-        'names' : ['Bob','Jessica','Mary','John','Mel'],
-        'births' : [968, 155, 77, 578, 973]}
+names = ['Bob','Jessica','Mary','John','Mel']
+births = [968, 155, 77, 578, 973]
 
-df = pd.DataFrame(dataCircle)
+mergeData = list(zip(names, births))
+
+df = pd.DataFrame(data = mergeData)
 df.plot.pie(y='births', figsize=(5, 5))
 
 
