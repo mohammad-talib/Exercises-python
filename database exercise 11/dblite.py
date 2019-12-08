@@ -3,7 +3,7 @@ from tkinter import *
 
 import sqlite3
 
-
+conn = sqlite3.connect("OrgDB.db")
 #c = conn.cursor()
 #
 #
@@ -20,7 +20,7 @@ root.geometry('300x250+810+415')
 
 def employee():
     def subAddEmp():
-        conn = sqlite3.connect("OrgDB.db")
+        
         c = conn.cursor()
         c.execute("INSERT INTO Employees (EmployeeNumber, EmployeeName, EmployeeGender, EmployeeNationality, EmployeeDateofBirth, EmployeeAddress, EmployeeDepartment, EmployeeSalary) VALUES (?,?,?,?,?,?,?,?)", ((int(num.get()),names.get(),gender.get(), nationality.get(), dateofBirth.get(), address.get(), department.get(), float(salary.get()))))
         conn.commit()

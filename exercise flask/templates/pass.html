@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <body>
+        {% if score >= 90 %}
+            <h1> got A</h1>
+        {% elif score < 90 and score >= 80 %}
+            <h1>got B</h1>
+        {% elif score < 80 and score >= 70 %}
+            <h1> got C</h1>
+        {% elif score < 70 and score >= 60 %}
+            <h1> got D</h1>
+        {% else %}
+            <h1> Faild </h1>
+        {% endif %}
+    </body>
+</html>
