@@ -25,20 +25,20 @@
 #        print("*",end="")
 #    print("")
 
-end = int(input("Please Enter The Lines Number : "));
-start = 0;
-counter=0
-half = end//2;
-for lines in range(end):
-    if((lines - counter) == half):
-        counter = counter +1
-        for stars in range((half - counter),0,-1):
-            print("*" , end=" ")
-    else:
-        for stars in range(lines + 1):
-            print("*" , end=" ")
-
-    print("\n")
+#end = int(input("Please Enter The Lines Number : "));
+#start = 0;
+#counter=0
+#half = end//2;
+#for lines in range(end):
+#    if((lines - counter) == half):
+#        counter = counter +1
+#        for stars in range((half - counter),0,-1):
+#            print("*" , end=" ")
+#    else:
+#        for stars in range(lines + 1):
+#            print("*" , end=" ")
+#
+#    print("\n")
 
    
 
@@ -89,12 +89,22 @@ for lines in range(end):
 #================================== Exercise 9 ===============================================#
 
 
-
-
-
-
-
-
+for i in range(1,10):
+    for j in range(10 - i):
+        print (" " , end=" ")
+    for j in range(1,i):
+        print(j, end=" ")
+    for i in range(i , 0 , -1):
+        print(i , end=" ")
+    print()
+for i in range(8,0 , -1):
+    for j in range(10 - i):
+        print (" " , end=" ")
+    for j in range(1,i):
+        print(j, end=" ")
+    for i in range(i , 0 , -1):
+        print(i , end=" ")
+    print()
 
 
 #================================== Exercise 10 ===============================================#
